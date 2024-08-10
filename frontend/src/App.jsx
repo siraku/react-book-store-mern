@@ -2,9 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CreateBooks from "./pages/CreateBooks";
 import DeleteBooks from "./pages/DeleteBooks";
-import DisplayBooks from "./pages/DisplayBooks";
 import EditBooks from "./pages/EditBooks";
 import HomeBooks from "./pages/HomeBooks";
+import ShowBook from "./pages/ShowBook";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Route path="/books/create" element={<CreateBooks />} />
       <Route path="/books/delete/:id" element={<DeleteBooks />} />
       <Route path="/books/edit/:id" element={<EditBooks />} />
-      <Route path="/books/details/:id" element={<DisplayBooks />} />
+      <Route path="/books/details/:id" element={<ShowBook />} />
     </Routes>
   );
 };
